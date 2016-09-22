@@ -1,0 +1,120 @@
+<?xml version="1.0"?>
+<rspec xmlns="http://www.geni.net/resources/rspec/3" xmlns:emulab="http://www.protogeni.net/resources/rspec/ext/emulab/1" xmlns:tour="http://www.protogeni.net/resources/rspec/ext/apt-tour/1" xmlns:jacks="http://www.protogeni.net/resources/rspec/ext/jacks/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.geni.net/resources/rspec/3    http://www.geni.net/resources/rspec/3/manifest.xsd" type="manifest" expires="2016-09-14T14:45:38Z">
+  <node xmlns:emulab="http://www.protogeni.net/resources/rspec/ext/emulab/1" client_id="node-0" component_manager_id="urn:publicid:IDN+instageni.rutgers.edu+authority+cm" component_id="urn:publicid:IDN+instageni.rutgers.edu+node+pc1" sliver_id="urn:publicid:IDN+instageni.rutgers.edu+sliver+20775" exclusive="false">
+    <icon xmlns="http://www.protogeni.net/resources/rspec/ext/jacks/1" url="https://portal.geni.net/images/Xen-VM.svg"/>
+    <sliver_type name="emulab-xen">
+      <disk_image name="urn:publicid:IDN+emulab.net+image+emulab-ops:UBUNTU14-64-STD"/>
+    </sliver_type>
+    <services>
+      <login authentication="ssh-keys" hostname="pc1.instageni.rutgers.edu" port="32314" username="efgics"/>
+      <login authentication="ssh-keys" hostname="pc1.instageni.rutgers.edu" port="32314" username="ss9979"/>
+      <login authentication="ssh-keys" hostname="pc1.instageni.rutgers.edu" port="32314" username="nxsvks"/>
+      <emulab:console server="pc1.instageni.rutgers.edu"/>
+    </services>
+    <interface client_id="interface-1" component_id="urn:publicid:IDN+instageni.rutgers.edu+interface+pc1:lo0" sliver_id="urn:publicid:IDN+instageni.rutgers.edu+sliver+20783" mac_address="0264109b37c8">
+      <ip address="10.10.1.2" type="ipv4"/>
+    </interface>
+    <emulab:vnode name="pcvm1-2" hardware_type="pcvm"/>
+    <host name="node-0.Trial.ch-geni-net.instageni.rutgers.edu"/>
+  </node>
+  <node xmlns:emulab="http://www.protogeni.net/resources/rspec/ext/emulab/1" client_id="node-1" component_manager_id="urn:publicid:IDN+instageni.rutgers.edu+authority+cm" component_id="urn:publicid:IDN+instageni.rutgers.edu+node+pc1" sliver_id="urn:publicid:IDN+instageni.rutgers.edu+sliver+20776" exclusive="false">
+    <icon xmlns="http://www.protogeni.net/resources/rspec/ext/jacks/1" url="https://portal.geni.net/images/Xen-VM.svg"/>
+    <sliver_type name="emulab-xen">
+      <disk_image name="urn:publicid:IDN+emulab.net+image+emulab-ops:UBUNTU14-64-STD"/>
+    </sliver_type>
+    <services>
+      <login authentication="ssh-keys" hostname="pc1.instageni.rutgers.edu" port="32315" username="efgics"/>
+      <login authentication="ssh-keys" hostname="pc1.instageni.rutgers.edu" port="32315" username="ss9979"/>
+      <login authentication="ssh-keys" hostname="pc1.instageni.rutgers.edu" port="32315" username="nxsvks"/>
+      <emulab:console server="pc1.instageni.rutgers.edu"/>
+    </services>
+    <interface client_id="interface-0" component_id="urn:publicid:IDN+instageni.rutgers.edu+interface+pc1:lo0" sliver_id="urn:publicid:IDN+instageni.rutgers.edu+sliver+20782" mac_address="028545b0ec59">
+      <ip address="10.10.1.1" type="ipv4"/>
+    </interface>
+    <interface client_id="interface-3" component_id="urn:publicid:IDN+instageni.rutgers.edu+interface+pc1:lo0" sliver_id="urn:publicid:IDN+instageni.rutgers.edu+sliver+20786" mac_address="029618f6da92">
+      <ip address="10.10.2.2" type="ipv4"/>
+    </interface>
+    <emulab:vnode name="pcvm1-3" hardware_type="pcvm"/>
+    <host name="node-1.Trial.ch-geni-net.instageni.rutgers.edu"/>
+  </node>
+  <node xmlns:emulab="http://www.protogeni.net/resources/rspec/ext/emulab/1" client_id="node-2" component_manager_id="urn:publicid:IDN+instageni.rutgers.edu+authority+cm" component_id="urn:publicid:IDN+instageni.rutgers.edu+node+pc1" sliver_id="urn:publicid:IDN+instageni.rutgers.edu+sliver+20777" exclusive="false">
+    <icon xmlns="http://www.protogeni.net/resources/rspec/ext/jacks/1" url="https://portal.geni.net/images/Xen-VM.svg"/>
+    <sliver_type name="emulab-xen">
+      <disk_image name="urn:publicid:IDN+emulab.net+image+emulab-ops:UBUNTU14-64-STD"/>
+    </sliver_type>
+    <services>
+      <login authentication="ssh-keys" hostname="pc1.instageni.rutgers.edu" port="32316" username="efgics"/>
+      <login authentication="ssh-keys" hostname="pc1.instageni.rutgers.edu" port="32316" username="ss9979"/>
+      <login authentication="ssh-keys" hostname="pc1.instageni.rutgers.edu" port="32316" username="nxsvks"/>
+      <emulab:console server="pc1.instageni.rutgers.edu"/>
+    </services>
+    <interface client_id="interface-2" component_id="urn:publicid:IDN+instageni.rutgers.edu+interface+pc1:lo0" sliver_id="urn:publicid:IDN+instageni.rutgers.edu+sliver+20785" mac_address="021fbdfd3c0c">
+      <ip address="10.10.2.1" type="ipv4"/>
+    </interface>
+    <interface client_id="interface-5" component_id="urn:publicid:IDN+instageni.rutgers.edu+interface+pc1:lo0" sliver_id="urn:publicid:IDN+instageni.rutgers.edu+sliver+20789" mac_address="023eebd60fdf">
+      <ip address="10.10.3.2" type="ipv4"/>
+    </interface>
+    <emulab:vnode name="pcvm1-4" hardware_type="pcvm"/>
+    <host name="node-2.Trial.ch-geni-net.instageni.rutgers.edu"/>
+  </node>
+  <node xmlns:emulab="http://www.protogeni.net/resources/rspec/ext/emulab/1" client_id="node-3" component_manager_id="urn:publicid:IDN+instageni.rutgers.edu+authority+cm" component_id="urn:publicid:IDN+instageni.rutgers.edu+node+pc1" sliver_id="urn:publicid:IDN+instageni.rutgers.edu+sliver+20778" exclusive="false">
+    <icon xmlns="http://www.protogeni.net/resources/rspec/ext/jacks/1" url="https://portal.geni.net/images/Xen-VM.svg"/>
+    <sliver_type name="emulab-xen">
+      <disk_image name="urn:publicid:IDN+emulab.net+image+emulab-ops:UBUNTU14-64-STD"/>
+    </sliver_type>
+    <services>
+      <login authentication="ssh-keys" hostname="pc1.instageni.rutgers.edu" port="32317" username="efgics"/>
+      <login authentication="ssh-keys" hostname="pc1.instageni.rutgers.edu" port="32317" username="ss9979"/>
+      <login authentication="ssh-keys" hostname="pc1.instageni.rutgers.edu" port="32317" username="nxsvks"/>
+      <emulab:console server="pc1.instageni.rutgers.edu"/>
+    </services>
+    <interface client_id="interface-4" component_id="urn:publicid:IDN+instageni.rutgers.edu+interface+pc1:lo0" sliver_id="urn:publicid:IDN+instageni.rutgers.edu+sliver+20788" mac_address="021200fabd11">
+      <ip address="10.10.3.1" type="ipv4"/>
+    </interface>
+    <interface client_id="interface-7" component_id="urn:publicid:IDN+instageni.rutgers.edu+interface+pc1:lo0" sliver_id="urn:publicid:IDN+instageni.rutgers.edu+sliver+20792" mac_address="028719e5d13e">
+      <ip address="10.10.4.2" type="ipv4"/>
+    </interface>
+    <emulab:vnode name="pcvm1-5" hardware_type="pcvm"/>
+    <host name="node-3.Trial.ch-geni-net.instageni.rutgers.edu"/>
+  </node>
+  <node xmlns:emulab="http://www.protogeni.net/resources/rspec/ext/emulab/1" client_id="node-4" component_manager_id="urn:publicid:IDN+instageni.rutgers.edu+authority+cm" component_id="urn:publicid:IDN+instageni.rutgers.edu+node+pc1" sliver_id="urn:publicid:IDN+instageni.rutgers.edu+sliver+20779" exclusive="false">
+    <icon xmlns="http://www.protogeni.net/resources/rspec/ext/jacks/1" url="https://portal.geni.net/images/Xen-VM.svg"/>
+    <sliver_type name="emulab-xen">
+      <disk_image name="urn:publicid:IDN+emulab.net+image+emulab-ops:UBUNTU14-64-STD"/>
+    </sliver_type>
+    <services>
+      <login authentication="ssh-keys" hostname="pc1.instageni.rutgers.edu" port="32318" username="efgics"/>
+      <login authentication="ssh-keys" hostname="pc1.instageni.rutgers.edu" port="32318" username="ss9979"/>
+      <login authentication="ssh-keys" hostname="pc1.instageni.rutgers.edu" port="32318" username="nxsvks"/>
+      <emulab:console server="pc1.instageni.rutgers.edu"/>
+    </services>
+    <interface client_id="interface-6" component_id="urn:publicid:IDN+instageni.rutgers.edu+interface+pc1:lo0" sliver_id="urn:publicid:IDN+instageni.rutgers.edu+sliver+20791" mac_address="02d14053e7b5">
+      <ip address="10.10.4.1" type="ipv4"/>
+    </interface>
+    <emulab:vnode name="pcvm1-10" hardware_type="pcvm"/>
+    <host name="node-4.Trial.ch-geni-net.instageni.rutgers.edu"/>
+  </node>
+  <link client_id="link-0" sliver_id="urn:publicid:IDN+instageni.rutgers.edu+sliver+20781">
+    <interface_ref client_id="interface-0" component_id="urn:publicid:IDN+instageni.rutgers.edu+interface+pc1:lo0" sliver_id="urn:publicid:IDN+instageni.rutgers.edu+sliver+20782"/>
+    <interface_ref client_id="interface-1" component_id="urn:publicid:IDN+instageni.rutgers.edu+interface+pc1:lo0" sliver_id="urn:publicid:IDN+instageni.rutgers.edu+sliver+20783"/>
+    <component_manager name="urn:publicid:IDN+instageni.rutgers.edu+authority+cm"/>
+  </link>
+  <link client_id="link-1" sliver_id="urn:publicid:IDN+instageni.rutgers.edu+sliver+20784">
+    <interface_ref client_id="interface-2" component_id="urn:publicid:IDN+instageni.rutgers.edu+interface+pc1:lo0" sliver_id="urn:publicid:IDN+instageni.rutgers.edu+sliver+20785"/>
+    <interface_ref client_id="interface-3" component_id="urn:publicid:IDN+instageni.rutgers.edu+interface+pc1:lo0" sliver_id="urn:publicid:IDN+instageni.rutgers.edu+sliver+20786"/>
+    <component_manager name="urn:publicid:IDN+instageni.rutgers.edu+authority+cm"/>
+  </link>
+  <link client_id="link-2" sliver_id="urn:publicid:IDN+instageni.rutgers.edu+sliver+20787">
+    <interface_ref client_id="interface-4" component_id="urn:publicid:IDN+instageni.rutgers.edu+interface+pc1:lo0" sliver_id="urn:publicid:IDN+instageni.rutgers.edu+sliver+20788"/>
+    <interface_ref client_id="interface-5" component_id="urn:publicid:IDN+instageni.rutgers.edu+interface+pc1:lo0" sliver_id="urn:publicid:IDN+instageni.rutgers.edu+sliver+20789"/>
+    <component_manager name="urn:publicid:IDN+instageni.rutgers.edu+authority+cm"/>
+  </link>
+  <link client_id="link-3" sliver_id="urn:publicid:IDN+instageni.rutgers.edu+sliver+20790">
+    <interface_ref client_id="interface-6" component_id="urn:publicid:IDN+instageni.rutgers.edu+interface+pc1:lo0" sliver_id="urn:publicid:IDN+instageni.rutgers.edu+sliver+20791"/>
+    <interface_ref client_id="interface-7" component_id="urn:publicid:IDN+instageni.rutgers.edu+interface+pc1:lo0" sliver_id="urn:publicid:IDN+instageni.rutgers.edu+sliver+20792"/>
+    <component_manager name="urn:publicid:IDN+instageni.rutgers.edu+authority+cm"/>
+  </link>
+  <rs:site_info xmlns:rs="http://www.protogeni.net/resources/rspec/ext/site-info/1">
+    <rs:location country="US" latitude="40.468090" longitude="-74.445183"/>
+  </rs:site_info>
+</rspec>
